@@ -1,0 +1,47 @@
+<div class="header">
+  <nav
+    class="navbar navbar-dark navbar-expand-md navigation-clean-search bg-dark"
+  >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="flickr"
+        ><img src="assets/flickr-1.svg" alt="Logo" class="logo" />flickr</a
+      >
+      <input
+        class="search-field my-4"
+        type="text"
+        [(ngModel)]="keyword"
+        (input)="searchImages()"
+        placeholder="Search for images"
+      />
+      <span class="navbar-text">
+        <a class="login" href="#">Login</a>
+        <a href="#"><button>Sign Up</button></a>
+      </span>
+    </div>
+  </nav>
+</div>
+
+<div class="container">
+  <div
+    class="search-results"
+    infiniteScroll
+    [infiniteScrollDistance]="2"
+    [infiniteScrollThrottle]="100"
+    (scrolled)="onScroll()"
+  >
+    <div></div>
+    <div class="row mt-4">
+      <div
+        class="col-xl-3 col-lg-3 col-md-4 col-sm-6 mb-3 mr-auto"
+        *ngFor="let item of flickrImages"
+      >
+        <div class="image-container">
+          <img [src]="item.imageUrl" alt="Flickr Image" class="thumbnail-img" />
+          <div class="overlay">
+            <div class="text">{{ item.imageUrl }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
