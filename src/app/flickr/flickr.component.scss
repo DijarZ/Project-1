@@ -147,12 +147,6 @@ button {
   }
 }
 
-@media (max-width: 478px) and (min-width: 276px) {
-  .search-field {
-    width: 20%;
-    margin: 10px auto;
-  }
-}
 @media (max-width: 283px) {
   .header .navbar {
     height: auto;
@@ -167,7 +161,7 @@ button {
       align-items: center;
     }
 
-    .header .navbar-collapse button {
+    .header .navbar-collapse {
       margin-top: 10px;
       width: 100%;
       margin-left: auto;
