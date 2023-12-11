@@ -1,0 +1,68 @@
+.header {
+  background: url("nat.jpeg") no-repeat;
+  padding-bottom: 80px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #fff;
+}
+
+.header .navbar {
+  padding: 0.75rem 0;
+  border-radius: 0;
+  box-shadow: none;
+  border: none;
+}
+.navbar-text {
+  margin-left: 25px;
+}
+.header .navbar .navbar-brand {
+  font-weight: bold;
+}
+
+.header .navbar .form-inline {
+  width: 80%;
+  background: none;
+  border: none;
+  border-bottom: 1px solid transparent;
+  border-radius: 0;
+  color: inherit;
+  transition: border-bottom-color 0.3s;
+}
+.header .navbar .form-inline .search-field {
+  width: 100%;
+  background: rgba(169, 169, 169, 0.5);
+  border: none;
+  border-bottom: 1px solid transparent;
+  border-radius: 5;
+  color: inherit;
+  transition: border-bottom-color 0.3s;
+  margin: 5px 0;
+}
+
+@media (min-width: 768px) {
+  .header .navbar .form-inline .search-field {
+    width: 80%;
+    max-width: 900px;
+    margin: 5px 100px 5px 250px;
+    background: rgba(169, 169, 169, 0.5);
+    border-radius: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .header {
+    padding-bottom: 120px;
+  }
+
+  .search-field {
+    width: 100%;
+    max-width: 900px;
+    margin-left: 300px;
+    margin-right: 400px;
+    background: rgb(249, 80, 80);
+    border-radius: 15px;
+  }
+  .container .hero {
+    display: flex;
+    align-items: center;
+  }
+}

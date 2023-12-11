@@ -1,0 +1,27 @@
+<div class="header">
+  <nav class="navbar navbar-dark navbar-expand-md navigation-clean-search">
+    <a class="navbar-brand" href="flickr">flickr</a>
+    <form class="form-inline mr-auto" target="_self">
+      <input
+        class="search-field form-control"
+        type="text"
+        [(ngModel)]="keyword"
+        (input)="onSearch(keyword)"
+        placeholder="Search for images"
+      />
+    </form>
+    <span class="navbar-text"> <a class="login" href="#">Log In</a></span>
+  </nav>
+  <div class="container hero">
+    <div class="col-12 col-lg-6 col-xl-5 offset-xl-1">
+      <h1>Find your inspiration.</h1>
+      <p>
+        Join the Flickr community, home to tens of billions of photos and 2
+        million groups.
+      </p>
+      <button class="btn btn-light btn-lg action-button" type="button">
+        Start for free
+      </button>
+    </div>
+  </div>
+</div>
