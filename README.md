@@ -15,7 +15,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Installation
 1. Clone the repository:
 
-   git clone https://github.com/your-username/project1.git  
+   git clone https://github.com/DijarZ/project1.git  
      cd project1  
 
    
